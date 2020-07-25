@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>图书管理分类</title>
+    <style>
+        span{
+            font-family:"楷体";
+            font-size:70px;
+            text-align:center;
+            color: #000000;
+        }
+        body {
+            font-family: "楷体";
+            font-size: 20px;
+            color: #f67914;
+            margin: 0px;
+            padding: 0px;
+        }
+        div{
+            float:left;
+            margin-left: 70px;
+        }
+        img{
+            position:absolute;
+            left:1100px;
+            top:30px;
+
+        }
+        #n nn{
+            font-size:25px;
+        }
+        #shuosuo{
+            width:50px;
+            height:40px;
+        }
+        a{
+            text-decoration:none;
+        }
+        a:hover{
+            color:red ;
+            text-decoration: none;
+        }
+        nav{
+            font-size:20px;
+            float:initial;
+            margin: 0 0 0 0;
+            padding: 0 0 0 0 ;
+        }
+        nav ul li {
+            float:left;
+            display: inline;
+        }
+        nav ul li a {
+            float: left;
+            padding: 11px 20px;
+            font-size: 19px;
+            text-align: center;
+            text-decoration: none;
+            background: url(aaa/zcx.jpg)
+            center left  no-repeat;
+            color: #fff;
+            outline: none;
+        }
+    </style>
+
+    <style type="text/css">
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .header {
+            width: 100%;
+            height: 58px;
+            background-color: #191D3A;
+        }
+
+        .inner {
+            width: 2000px;
+            height: 58px;
+            margin: 0 auto;
+            clear: both;
+        }
+
+        .inner .logo {
+            float: left;
+            width: 400px;
+            height: 44px;
+            margin: 7px 0;
+        }
+
+        .header .nav {
+            float: left;
+            height: 90px;
+        }
+
+        .header .inner .navs #current {
+            color: #E2E4ED;
+            background-color: #252947;
+        }
+
+        .header .inner .navs a {
+            float: left;
+            width: 85px;
+            height: 58px;
+            border-left: 1px solid #252947;
+            border-right: 1px solid #252947;
+            color: #818496;
+            text-decoration: none;
+            text-align: center;
+            line-height: 58px;
+            font-size: 14px;
+        }
+
+        .header .inner .navs .joinus {
+            margin: 12px 0 0 10px;
+            height: 32px;
+            width: 98px;
+            border: 1px solid #3aca7a;
+            border-radius: 3px;
+            background-color: #38b774;
+            color: #fff;
+            text-align: center;
+            line-height: 32px;
+        }
+
+        .header .inner .nav:hover {
+            color: #fff;
+        }
+
+        .header .inner .navs .joinus:hover {
+            background-color: green;
+        }
+
+        .header .inner .changelang {
+            float: right;
+            line-height: 58px;
+            /*   padding-left:20px;  在盒子里改的话，若未设置盒子高宽，则会缩短内容的长度 ，比如原来
+            自动分配给内容90px，但有了边距，则会自动分配70px，另外20px给了边距*/
+            /* 在内容里改的话，相当于内容的外边距 */
+
+
+        }
+
+        .header .inner .changelang a {
+            display: block;
+            margin-right: 10px;
+            float: left;
+            color: #818496;
+            text-decoration: none;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .header .inner .changelang .cn {
+            color: #1F9574;
+
+        }
+
+        .header .inner .changelang a:hover {
+            color: #1F9574;
+        }
+
+        /* banner */
+        .banner {
+            width: 100%;
+
+        }
+
+        /* content */
+        .content {
+
+            width: 1200px;
+            margin: 10px auto;
+
+        }
+
+        /* .content li {
+            list-style: none;
+        } */
+
+        /* 列表 */
+        .content ul li {
+            list-style: none;
+            float: left;
+            width: 218px;
+            margin-right: 40px;
+        }
+
+        .content ul li  img {
+            width: 218px;
+            height: 130px;
+
+        }
+
+        .content ul li h4 {
+            text-align: center;
+            line-height: 38px;
+            font-size: 14px;
+        }
+
+        .content ul li .bf {
+            text-align: center;
+            height: 20px;
+        }
+
+        .content ul li a {
+            color: green;
+            font-size: 14px;
+            text-decoration: none;
+            background: url(imgs/sanjiaoxing.png) no-repeat right 7px;
+            padding-right: 12px;
+        }
+    </style>
+
+</head>
+
+
+<h1><span>&nbsp图书管理分类</span></h1>
+<body>
+
+<body background="picture/6.jpg"
+      style="background-repeat:no-repeat ;
+       background-size:100% 100%;
+       background-attachment: fixed;">
+
+<!-- 导航栏 -->
+<div class="header">
+    <div class="inner">
+        <div class="logo">
+            <img src="imgs/logo.png" alt="">
+        </div>
+        <div class="navs">
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="nav" id="current">首页</a>
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="nav">个人信息</a>
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="nav">图书借阅</a>
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="nav">图书退换</a>
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="nav">图书信息管理</a>
+            <a href="https://blog.csdn.net/qq_34243694/article/details/94472828" class="joinus">联系我们</a>
+            <input id="nnn" type="search" name="shousuo" placeholder="图书搜索"/>
+            <button id="shuosuo" type="button"   name="queding" onclick="window.location.href='https://www.baidu.com'" >搜索</button>
+
+        </div>
+        <div class="changelang">
+
+            <a href="" class="cn">中文</a>
+            <a href="">EN</a>
+
+        </div>
+
+    </div>
+</div>
+<!-- banner：静态 -->
+<div class="banner">
+    <img src="imgs/banner.jpg" alt="">
+</div>
+<!-- 宣传栏 -->
+<div class="content">
+
+
+</div>
+</body>
+</br>
+<!img src="picture/2.jpg" width="200" height="200" />
+<div><h1><a href="ccc.html" target="_blank">科技类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《最新科学技术全书》</a></li>
+        <li><a href="ccc.html">《科学技术发展简史》</a></li>
+        <li><a href="ccc.html">《科学探索者》</a></li>
+        <li><a href="ccc.html">《时间简史》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+    <h1><a href="ccc.html">文学类</a></h1>
+    <ul>
+        <li><a href="守望者.html">《麦田里的守望者》</a></li>
+        <li><a href="ccc.html">《羊脂球》</a></li>
+        <li><a href="ccc.html">《到灯塔去》</a></li>
+        <li><a href="ccc.html">《诗经》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+</div>
+<div><h1><a href="ccc.html">艺术类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《艺术的故事》 </a></li>
+        <li><a href="ccc.html">《美的历程》</a></li>
+        <li><a href="ccc.html">《西方美学史》</a></li>
+        <li><a href="ccc.html">《艺术发展史》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+    <h1><a href="ccc.html">医学类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《生命科学史》</a></li>
+        <li><a href="ccc.html">《医学方法论》</a></li>
+        <li><a href="ccc.html">《医学的历史》</a></li>
+        <li><a href="ccc.html">《本草纲目》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+</div>
+<div>
+    <h1><a href="ccc.html">哲学类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《哲学的故事》</a></li>
+        <li><a href="ccc.html">《哲学与人生》</a></li>
+        <li><a href="ccc.html">《大问题》</a></li>
+        <li><a href="ccc.html">《西方哲学史》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+    <h1><a href="ccc.html">经济类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《经济学原理》</a></li>
+        <li><a href="ccc.html">《统计学原理》</a></li>
+        <li><a href="ccc.html">《微观经济学》</a></li>
+        <li><a href="ccc.html">《宏观经济学》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+</div>
+<div><h1><a href="ccc.html">计算机类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《代码大全》</a></li>
+        <li><a href="ccc.html">《程序眼修炼之道》</a></li>
+        <li><a href="ccc.html">《c程序设计语言》</a></li>
+        <li><a href="ccc.html">《算法导论》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+    <h1><a href="人文类书籍.html">人文类</a></h1>
+    <ul>
+        <li><a href="ccc.html">《陈序经》</a></li>
+        <li><a href="ccc.html">《波风与波谷》</a></li>
+        <li><a href="ccc.html">《伟大的海》</a></li>
+        <li><a href="ccc.html">《幻境中相逢》</a></li>
+        <li><a href="ccc.html">......</a></li>
+    </ul>
+</div>
+</body>
+</html>
