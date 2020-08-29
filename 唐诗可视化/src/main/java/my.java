@@ -27,7 +27,7 @@ public class my {
 
     public static void main(String[] args) throws IOException, NoSuchAlgorithmException, SQLException, ClassNotFoundException {
 
-        //获取列表页
+        //获取列表页。
 
         // 创造无界面的浏览器
         WebClient webClient = new WebClient (BrowserVersion.CHROME);//模拟chrome
